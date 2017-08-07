@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Knock</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="https://knockworkapp.com/favicon.png">
+    <!-- Share on Facebook -->
+    <!-- David was here -->
+    <meta property="og:title" content="Knock Admin Web Site" />
+    <meta property="og:url" content="https://knockworkapp.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://knockworkapp.com/assets/favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class = "headerDiv">
+      <img id="birdPic" src="http://l.rgbimg.com/cache1sHdJf/users/s/so/somadjinn/600/nAR7r2Y.jpg"/>
+      <h2 id = "titleText">BIRD'S EYE VIEW</h2>
+      <img id="birdPic2" src="http://l.rgbimg.com/cache1sHdJf/users/s/so/somadjinn/600/nAR7r2Y.jpg"/>
+    </div>
+    <div id="map"></div>
+    <div id="floating-panel">
+     <button onclick="toggleHeatmap()">Show Heatmap</button>
+     <button onclick="toggleDisplayWorkerLocation()">Toggle Display Workers</button>
+    </div>
+    <div id="container">
+        <table style="width:100%">
+        <tr>
+          <th><a href="worker-data.html">Workers</th>
+          <th><a href="order-data.html">Orders</a></th>
+          <th><a href="worker-data.html">Active Workers</th>
+          <th><a href="order-data.html">Open Orders</th>
+          <th><a href="location-data.html">Pickup Address</th>
+          <th><a href="location-data.html">Delivery Address</th>
+        </tr>
+        <tr>
+          <td><ul id="workerlist"></ul></td>
+          <td><ol id="knockrequest"></ol></td>
+          <td><p id="worker_count"></p></td>
+          <td><p id="order_count"></p></td>
+          <td><ul id="pickupaddress"></ul></td>
+          <td><ul id="deliveryaddress"></ul></td>
+        </tr>
+      </table>
+    </div>
+    <script  src="https://code.jquery.com/jquery-3.1.1.js"  ></script>
+    <script src="firebase.js"></script>
+    <script src="heatmap.js"></script>
+    <script src="googlemaps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIUAfDRmOfF_ZTGvNaflBMtQTzHu-yVEc&libraries=visualization&callback=initMap"
+    async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+  #map {
+    height: 83%;
+    border: 16px solid green;
+  }
+  html, body {
+    height: 83%;
+    margin: 0;
+    padding: 0;
+    background-color: #98FB98
+  }
+  h2 {
+    text-align: center;
+    font-family: Helvetica
+  }
+  h3 {
+    text-align: center;
+  }
+  h3:first-letter {
+    font-size: 375%;
+  }
+  #worker_count, #order_count {
+    color: green;
+    text-align: center;
+    font-size: 133%;
+  }
+  ol {
+    list-style-type: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  p {
+    font-size: 375%;
+    text-align: center;
+  }
+
+  ul,li {
+    overflow:scroll;
+  }
+
+  .headerDiv {
+  height:100px;
+  margin-bottom:10px;
+  margin-top:10px;
+
+}
+#birdPic {
+height:70px;
+width:70px;
+display:inline;
+margin-left:35%;
+margin-top:30px;
+}
+
+#birdPic2 {
+height:70px;
+width:70px;
+display:inline;
+margin-top:30px;
+
+}
+
+#titleText {
+
+display:inline;
+vertical-align:67%
+}
