@@ -2,7 +2,7 @@
     height: 83%;
     border: 16px solid green;
   }
-  
+
   html, body {
     height: 83%;
     margin: 0;
@@ -15,26 +15,13 @@
     font-family: Helvetica
   }
 
-  h3 {
-    text-align: center;
-  }
-
   h3:first-letter {
     font-size: 375%;
   }
 
   #worker_count, #order_count {
     color: green;
-    text-align: center;
-    font-size: 133%;
-  }
-
-  ol {
-    list-style-type: none;
-  }
-
-  ul {
-    list-style-type: none;
+    font-size: 250%;
   }
 
   table, th, td {
@@ -45,13 +32,3 @@
     font-size: 375%;
     text-align: center;
   }
-
-  ul,li {
-    overflow:scroll;
-  }
-
-  .headerDiv {
-  height:100px;
-  margin-bottom:10px;
-  margin-top:10px;
-}
