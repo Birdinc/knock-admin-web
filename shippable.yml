@@ -1,0 +1,47 @@
+language: node_js
+
+node_js:
+  - 0.12
+
+services:
+
+env:
+
+matrix:
+
+build:
+
+  pre_ci:
+
+  pre_ci_boot:
+    image_name:
+    image_tag:
+    pull:
+    options:
+    
+  ci:
+    - npm install -g grunt-cli
+  
+  post_ci:
+   
+  on_success:
+  
+  on_failure:
+
+  cache:
+  
+  cache_dir_list:
+
+  push:
+
+integrations:
+ notifications:
+   - integrationName: knock_slack
+     type: slack
+     recipients:
+       - "#adminweb"
+     
+hub:
+    - integrationName: 
+      type:
+      agent_only:
